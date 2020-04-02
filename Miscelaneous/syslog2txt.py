@@ -68,10 +68,6 @@ def appArr():
 
     fPass = getDict(pss)
 
-    #for i, e in enumerate(fPass):
-    #    ce = e
-    #    ne = mnObj[(i + 1) % len(fPass)]
-
     return fPass
 
 
