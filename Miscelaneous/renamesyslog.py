@@ -9,7 +9,7 @@ def main():
 
 
     # Creating lists for the extraction of strings corresponding to sequence numbers and datestamps of the filenames
-    spltXD = [str(i).split("ASPPSGW01_")[1:] for i in dirElements]
+    spltXD = [str(i).split("xxxxxx_")[1:] for i in dirElements]     # Modify filename prefix as needed
 
     spltX = [str(i).split("_")[1:] for i in spltXD]
     spltX = [str(i).split("'")[0] for i in spltX]
@@ -28,7 +28,7 @@ def main():
 
     for seq in seqNum:
         for date in dateNum:
-            fullName.append("CI4GERIC_ASMAT_000000" + seq + "_" + date) # Populating fullName list given criteria
+            fullName.append("xxxxxx_yyyyyy_zzzzzz" + seq + "_" + date) # Populating fullName list given required criteria
 
     for file, name in zip(dirElements, compName):
         os.rename(os.path.join(srcPath, file), os.path.join(dstPath, name)) # Renaming files
