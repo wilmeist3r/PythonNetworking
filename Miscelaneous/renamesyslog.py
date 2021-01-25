@@ -28,9 +28,9 @@ def main():
 
     for seq in seqNum:
         for date in dateNum:
-            fullName.append("xxxxxx_yyyyyy_zzzzzz" + seq + "_" + date) # Populating fullName list given required criteria
+            fullName.append("xxxxxx_yyyyyy_zzzzzz" + seq + "_" + date) # Populating fullName list. Change depending upon criteria
 
-    for file, name in zip(dirElements, compName):
+    for file, name in zip(dirElements, fullName):
         os.rename(os.path.join(srcPath, file), os.path.join(dstPath, name)) # Renaming files
 
 
