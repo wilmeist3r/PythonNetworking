@@ -19,7 +19,7 @@ def main():
     fullName = []
 
 
-    for seq in spltX:
+    for seq in spltS:
         for date in spltD:
             fullName.append("CI4GERIC_ASMAT_000000" + seq + "_" + date) # Populating fullName list. Change depending upon criteria
 
